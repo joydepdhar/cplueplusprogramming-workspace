@@ -19,10 +19,11 @@ int main() {
     // rahim.roll=45;
     // rahim.cls=5;
     // rahim.gpa=4.10;
-    Student rahim(1,5,5.00);
-    Student karim(2,5,4.99);
-    cout<<rahim.roll<<" "<<rahim.cls<<" "<<rahim.gpa<<endl;
-    cout<<karim.roll<<" "<<karim.cls<<" "<<karim.gpa<<endl;
+    // Student rahim(1,5,5.00);
+    // Student obj=fun();
+    Student* karim = new Student(2,5,4.99);
+    // cout<<obj.roll<<" "<<obj.cls<<" "<<obj.gpa<<endl;
+    cout<<karim->roll<<" "<<karim->cls<<" "<<karim->gpa<<endl;
     
     return 0;
 }
