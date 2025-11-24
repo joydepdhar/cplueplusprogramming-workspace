@@ -14,5 +14,9 @@ int main() {
     cout<<min(a,b)<<endl;
     swap(a,b);
     cout<<a<<" "<<b<<endl;
+    int temp=a;
+    a=b;
+    b=temp;
+    cout<<a<<" "<<b<<endl;
     return 0;
 }
