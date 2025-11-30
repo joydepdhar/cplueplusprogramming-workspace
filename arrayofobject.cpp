@@ -30,13 +30,18 @@ int main() {
         // cin.ignore();
         cin>>a[i].name>>a[i].cls>>a[i].roll>>a[i].marks;
     }  
-    int mn=INT_MAX;
+    // int mn=INT_MAX;
+    Student mn;
+    mn.marks=INT_MAX;
     for(int i=0;i<n;i++){
-        mn=min(a[i].marks,mn);
+        // mn.marks=min(a[i].marks,mn.marks);
+        if(a[i].marks<mn.marks){
+            mn=a[i];
+        }
     }
     // for(int i=0;i<n;i++){
     //     cout<<a[i].name<<" "<<a[i].cls<<" "<<a[i].roll<<endl;
     // }
-    cout<<mn<<endl;
+    cout<<mn.marks<<mn.name<<mn.cls<<mn.roll<<endl;
     return 0;
 }
