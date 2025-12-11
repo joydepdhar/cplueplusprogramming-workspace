@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    cout<<"Enter the Array Size:";
     int n;
     cin>>n;
     long long arr[n];
