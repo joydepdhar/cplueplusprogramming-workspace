@@ -17,8 +17,8 @@ int main() {
     // reverse(s.begin(),s.end());
     // cout<<s<<endl;
     string s = "hello";
-for (char ch : s) {
-cout << ch << " ";
-}
+        for (char ch : s) {
+        cout << ch << " ";
+    }
     return 0;
 }
